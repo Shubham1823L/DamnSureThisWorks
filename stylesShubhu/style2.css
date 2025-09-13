@@ -1,0 +1,282 @@
+/* CSS Reset */
+input,
+select,
+button,
+a {
+    all: unset;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+/* General Styling */
+:root {
+    --hero-bg-black-400: #121212;
+    --hero-button-hover-white: #F0F0F0;
+
+    --grey-400: #212121;
+    --grey-hover-def: #1F1F1F;
+    --grey-txt-def: #b3b3b3;
+
+    --green-400: #3BE275;
+    --green-600: #1BD760;
+
+    --ff-spotify: "Spotify Mix";
+
+    --border-radius-def: 8px;
+
+}
+
+* {
+    font-family: var(--ff-spotify) !important;
+    color: white;
+}
+
+/* Actual Styling */
+main {
+    display: flex;
+    gap: .5rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+/* heroHeader */
+
+.heroWrapper {
+    border-radius: var(--border-radius-def);
+    background-color: var(--hero-bg-black-400);
+    padding: 1.2rem 2rem;
+    max-height: 700px;
+    overflow: scroll;
+    /* #CHANGE */
+    width: 70vw;
+
+}
+
+.heroHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.heroNav {
+    display: flex;
+    gap: .5rem;
+}
+
+.roundButtonBase {
+    background-color: var(--grey-400);
+    color: white;
+    border-radius: 999px;
+    padding: .4em .8em;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all .15s ease-in-out;
+    cursor: pointer;
+
+    &:first-child {
+        background-color: white;
+        color: black;
+    }
+}
+
+.roundButtonBase:hover {
+    background-color: var(--hero-button-hover-white);
+    color: black;
+}
+
+.lastPlaylists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: .5rem;
+}
+
+.longCard {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    overflow: hidden;
+    border-radius: var(--border-radius-def);
+    background-color: var(--grey-400);
+    box-shadow: 0 1.5px 10px 0 rgba(0, 0, 0, 0.541);
+    cursor: pointer;
+
+}
+
+.longCard:is(:hover, :focus) {
+    background-color: #ffffff24;
+}
+
+.lCardLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+.lCardRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    flex: 1;
+
+
+}
+
+.playButtonBase {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: var(--green-600);
+    border-radius: 50%;
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    top: 15px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background-color: var(--green-400);
+    }
+
+    img {
+        --perc: 58%;
+        width: var(--perc);
+        height: var(--perc);
+        margin-left: 2px;
+    }
+}
+
+.showPlayButton {
+    opacity: 1;
+    top: 0;
+}
+
+
+/* Homepage Recommendation Playlist */
+
+.heroPlaylistsWrapper {
+    transform: translateX(-.7rem);
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+
+
+
+}
+
+.heroPlaylists {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+}
+
+.heroPlaylistsTitle {
+    padding-inline-start: .7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        text-transform: capitalize;
+        cursor: pointer;
+
+    }
+
+    a:last-child {
+        text-transform: none;
+        color: var(--grey-txt-def);
+        font-size: 14px;
+        font-weight: 700;
+        margin-inline-end: .75rem;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.heroCardsContainer {
+    max-width: 100%;
+    max-height: min-content;
+    display: flex;
+    overflow: scroll hidden;
+}
+
+.heroCardWrapper {
+    padding: .7rem;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+    border-radius: var(--border-radius-def);
+
+    &:hover {
+        background-color: var(--grey-hover-def);
+
+    }
+
+}
+
+.heroCard {
+    display: grid;
+    width: min-content;
+    overflow: hidden;
+    gap: .6rem;
+
+    p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-size: 14px;
+        color: var(--grey-txt-def);
+        max-width: 95%;
+    }
+
+
+}
+
+.heroCard>div {
+    width: 171px;
+    border-radius: var(--border-radius-def);
+    overflow: hidden;
+    position: relative;
+}
+
+.heroCard>div .playButtonBase {
+    --dimension: 48px;
+    width: var(--dimension);
+    height: var(--dimension);
+    position: absolute;
+    top: 135px;
+    right: 6px;
+    box-shadow: 0 12px 12px 1px rgba(0, 0, 0, 0.785);
+
+    img {
+        --perc: 47%;
+    }
+
+}
+
+.heroCard>div .showPlayButton {
+    top: 110px;
+}
