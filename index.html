@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Napster</title>
+    <!-- also add icon -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prathamstyle.css">
+    <link rel="stylesheet" href="addFont.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#"><img src="svgs/logo.svg" alt="spotify logo" class="spotifylogo"></a>
+                </li>
+                <li class="centersearchl">
+                    <a href="#">
+                        <div class="iconbox">
+                            <img src="svgs/home.svg" alt="homeicon" class="homeicon">
+                        </div>
+                    </a>
+                    <div class="searchbar">
+                        <img src="svgs/search.svg" alt="search icon" class="searchicon">
+                        <input type="text" placeholder="What do you want to play?" class="search">
+                        <div class="vline"></div>
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="browseicon" viewBox="0 0 24 24">
+                            <path d="M15 15.5c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2"></path>
+                            <path
+                                d="M1.513 9.37A1 1 0 0 1 2.291 9h19.418a1 1 0 0 1 .979 1.208l-2.339 11a1 1 0 0 1-.978.792H4.63a1 1 0 0 1-.978-.792l-2.339-11a1 1 0 0 1 .201-.837zM3.525 11l1.913 9h13.123l1.913-9zM4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4h-2V3H6v3H4z">
+                            </path>
+                        </svg>
+                    </div>
+                </li>
+                <li class="installi">
+                    <a href="#" class="install">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="installicon" viewBox="0 0 16 16"
+                            style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);">
+                            <path
+                                d="M4.995 8.745a.75.75 0 0 1 1.06 0L7.25 9.939V4a.75.75 0 0 1 1.5 0v5.94l1.195-1.195a.75.75 0 1 1 1.06 1.06L8 12.811l-.528-.528-.005-.005-2.472-2.473a.75.75 0 0 1 0-1.06">
+                            </path>
+                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13">
+                            </path>
+                        </svg>
+                        <div class="intxt">Install App</div>
+                    </a>
+                </li>
+                <li><svg data-encore-id="icon" role="img" aria-hidden="true" class="bellicon" viewBox="0 0 16 16"
+                        style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);">
+                        <path
+                            d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4m-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569zm4.5 8a1 1 0 1 0 2 0z">
+                        </path>
+                    </svg></li>
+                <li><svg data-encore-id="icon" role="img" aria-hidden="true" class="peopleicon" viewBox="0 0 16 16"
+                        style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);">
+                        <path
+                            d="M3.849 10.034c-.021-.465.026-.93.139-1.381H1.669c.143-.303.375-.556.665-.724l.922-.532a1.63 1.63 0 0 0 .436-2.458 1.8 1.8 0 0 1-.474-1.081q-.014-.287.057-.563a1.12 1.12 0 0 1 .627-.7 1.2 1.2 0 0 1 .944 0q.225.1.392.281c.108.12.188.263.237.417q.074.276.057.561a1.8 1.8 0 0 1-.475 1.084 1.6 1.6 0 0 0-.124 1.9c.36-.388.792-.702 1.272-.927v-.015c.48-.546.768-1.233.821-1.958a3.2 3.2 0 0 0-.135-1.132 2.657 2.657 0 0 0-5.04 0c-.111.367-.157.75-.135 1.133.053.724.341 1.41.821 1.955A.13.13 0 0 1 2.565 6a.13.13 0 0 1-.063.091l-.922.532A3.2 3.2 0 0 0-.004 9.396v.75h3.866c.001-.033-.01-.071-.013-.112m10.568-3.4-.922-.532a.13.13 0 0 1-.064-.091.12.12 0 0 1 .028-.1c.48-.546.768-1.233.821-1.958a3.3 3.3 0 0 0-.135-1.135A2.64 2.64 0 0 0 12.7 1.233a2.67 2.67 0 0 0-3.042.64 2.65 2.65 0 0 0-.554.948c-.11.367-.156.75-.134 1.133.053.724.341 1.41.821 1.955.005.006 0 .011 0 .018.48.225.911.54 1.272.927a1.6 1.6 0 0 0-.125-1.907 1.8 1.8 0 0 1-.474-1.081q-.015-.287.057-.563a1.12 1.12 0 0 1 .627-.7 1.2 1.2 0 0 1 .944 0q.225.1.392.281.162.182.236.413c.05.184.07.375.058.565a1.8 1.8 0 0 1-.475 1.084 1.633 1.633 0 0 0 .438 2.456l.922.532c.29.169.52.421.664.724h-2.319c.113.452.16.918.139 1.383 0 .04-.013.078-.017.117h3.866v-.75a3.2 3.2 0 0 0-1.58-2.778v.004zm-3.625 6-.922-.532a.13.13 0 0 1-.061-.144.1.1 0 0 1 .025-.047 3.33 3.33 0 0 0 .821-1.958 3.2 3.2 0 0 0-.135-1.132 2.657 2.657 0 0 0-5.041 0c-.11.367-.156.75-.134 1.133.053.724.341 1.41.821 1.955a.13.13 0 0 1 .028.106.13.13 0 0 1-.063.091l-.922.532a3.2 3.2 0 0 0-1.584 2.773v.75h8.75v-.75a3.2 3.2 0 0 0-1.583-2.781zm-5.5 2.023c.143-.303.375-.556.665-.724l.922-.532a1.63 1.63 0 0 0 .436-2.458 1.8 1.8 0 0 1-.474-1.081q-.015-.287.057-.563a1.12 1.12 0 0 1 .627-.7 1.2 1.2 0 0 1 .944 0q.225.1.392.281c.108.12.188.263.237.417q.073.276.057.561a1.8 1.8 0 0 1-.475 1.084 1.632 1.632 0 0 0 .438 2.456l.922.532c.29.169.52.421.664.724z">
+                        </path>
+                    </svg></li>
+                <li>
+                    <div class="accountdiv">P</div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="leftSidebar">
+            <div class="sideparent">
+
+                <nav class="sidenavbar">
+                    <ul class="navul">
+                        <li class="urlibrary">Your Library</li>
+                        <li class="buttoncan"><button class="create-button"> <svg data-encore-id="icon" role="img"
+                                    aria-hidden="true" class="plussvg" viewBox="0 0 16 16"
+                                    style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);">
+                                    <path
+                                        d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75">
+                                    </path>
+                                </svg> Create</button></li>
+                        <li><svg data-encore-id="icon" role="img" aria-hidden="true" class="fullscreenicon"
+                                viewBox="0 0 16 16"
+                                style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);">
+                                <path
+                                    d="M6.53 9.47a.75.75 0 0 1 0 1.06l-2.72 2.72h1.018a.75.75 0 0 1 0 1.5H1.25v-3.579a.75.75 0 0 1 1.5 0v1.018l2.72-2.72a.75.75 0 0 1 1.06 0zm2.94-2.94a.75.75 0 0 1 0-1.06l2.72-2.72h-1.018a.75.75 0 1 1 0-1.5h3.578v3.579a.75.75 0 0 1-1.5 0V3.81l-2.72 2.72a.75.75 0 0 1-1.06 0">
+                                </path>
+                            </svg></li>
+                    </ul>
+                </nav>
+                <button class="create-button artistbutton">Artists</button>
+                <nav class="sidenav">
+                    <div class="searchicondiv"><svg data-encore-id="icon" role="img" aria-hidden="true"
+                            class="searchiconside" viewBox="0 0 16 16"
+                            style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);">
+                            <path
+                                d="M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5M.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7">
+                            </path>
+                        </svg></div>
+                    <div class="recentdiv">
+                        Recent
+                        <img src="svgs/Menu-Add-Line--Streamline-Remix.svg" alt="recenticon" class="recenticon">
+                    </div>
+                </nav>
+                <div class="artistcontent">
+                    <div class="artistbar">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Charlie_Puth_2022.jpg" alt="" class="artistphoto">
+                        <div class="artistbarcontent">
+                            <div class="name">Charlie Puth</div>
+                            <div class="about">Artist</div>
+                        </div>
+                    </div>
+                    <div class="artistbar">
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHh8qM0XohjK1N3lfBPqsym-SB_yf7PPij2dm4_LrZQUohxVf-2_WouFk_aWaZb3-Nef0CAiL416GT3orbJ5SWEfoq0tcx1ZsNK87RwSyDFg"
+                            alt="" class="artistphoto">
+                        <div class="artistbarcontent">
+                            <div class="name">The Weeknd</div>
+                            <div class="about">Artist</div>
+                        </div>
+                    </div>
+                    <div class="artistbar">
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSA6Pl1Uf0TJ4_L_6V6kG7T1gp9DQNlhiJIqa_2dYuke1sLy52UYf8Bqz7kYZhSMT3zyDboSNqpIXWQKVV_FD7A-PSq_g5uTynGFZcDtiHisA"
+                            alt="" class="artistphoto">
+                        <div class="artistbarcontent">
+                            <div class="name">Ed Sheeran</div>
+                            <div class="about">Artist</div>
+                        </div>
+                    </div>
+                    <div class="artistbar">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNzAzYjEzNzctYmNlMy00Y2JlLWI5MzItM2E5NzkwOGQyYjc0XkEyXkFqcGc@._V1_.jpg"
+                            alt="" class="artistphoto">
+                        <div class="artistbarcontent">
+                            <div class="name">Lana Del Rey</div>
+                            <div class="about">Artist</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="hero"></div>
+        <div class="rightSidebar"></div>
+    </main>
+    <footer>
+        <div class="player">
+            <img src="data:image/jpeg;base64,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" alt="" class="musicimg">
+            <div class="musicdetails">
+                <div class="musictitle">Every Breath You</div>
+                <div class="musicsubs"><svg data-encore-id="icon" role="img" aria-hidden="true" class="videoicon" viewBox="0 0 16 16" style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller-2); --encore-icon-width: var(--encore-graphic-size-decorative-smaller-2);"><path d="M1.75 2.5a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25zM0 2.75C0 1.784.784 1 1.75 1h12.5c.967 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25z"></path><path d="m6 5 5.196 3L6 11z"></path></svg>Music video &nbsp &nbsp The Police</div>
+            </div>
+            <svg data-encore-id="icon" role="img" aria-hidden="true" class="addicon" viewBox="0 0 16 16" style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8"></path><path d="M11.75 8a.75.75 0 0 1-.75.75H8.75V11a.75.75 0 0 1-1.5 0V8.75H5a.75.75 0 0 1 0-1.5h2.25V5a.75.75 0 0 1 1.5 0v2.25H11a.75.75 0 0 1 .75.75"></path></svg>
+            <div class="mainplayer"></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
