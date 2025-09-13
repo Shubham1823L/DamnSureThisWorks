@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Spotify Mix';
+    src: url(' SpotifyMixUI/SpotifyMix-Regular.eot');
+    src: local('Spotify Mix Regular'), local('SpotifyMix-Regular'),
+        url(' SpotifyMixUI/SpotifyMix-Regular.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-Regular.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-Regular.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix';
+    src: url(' SpotifyMixUI/SpotifyMix-LightItalic.eot');
+    src: local('Spotify Mix Light Italic'), local('SpotifyMix-LightItalic'),
+        url(' SpotifyMixUI/SpotifyMix-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-LightItalic.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-LightItalic.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix';
+    src: url(' SpotifyMixUI/SpotifyMix-ExtraboldItalic.eot');
+    src: local('Spotify Mix Extrabold Italic'), local('SpotifyMix-ExtraboldItalic'),
+        url(' SpotifyMixUI/SpotifyMix-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-ExtraboldItalic.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-ExtraboldItalic.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-ExtraboldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix';
+    src: url(' SpotifyMixUI/SpotifyMix-Extrabold.eot');
+    src: local('Spotify Mix Extrabold'), local('SpotifyMix-Extrabold'),
+        url(' SpotifyMixUI/SpotifyMix-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-Extrabold.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-Extrabold.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-Extrabold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix';
+    src: url(' SpotifyMixUI/SpotifyMix-Light.eot');
+    src: local('Spotify Mix Light'), local('SpotifyMix-Light'),
+        url(' SpotifyMixUI/SpotifyMix-Light.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-Light.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-Light.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix';
+    src: url(' SpotifyMixUI/SpotifyMix-BlackItalic.eot');
+    src: local('Spotify Mix Black Italic'), local('SpotifyMix-BlackItalic'),
+        url(' SpotifyMixUI/SpotifyMix-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-BlackItalic.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-BlackItalic.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix';
+    src: url(' SpotifyMixUI/SpotifyMix-RegularItalic.eot');
+    src: local('Spotify Mix Regular Italic'), local('SpotifyMix-RegularItalic'),
+        url(' SpotifyMixUI/SpotifyMix-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-RegularItalic.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-RegularItalic.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix';
+    src: url(' SpotifyMixUI/SpotifyMix-BoldItalic.eot');
+    src: local('Spotify Mix Bold Italic'), local('SpotifyMix-BoldItalic'),
+        url(' SpotifyMixUI/SpotifyMix-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-BoldItalic.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-BoldItalic.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix';
+    src: url(' SpotifyMixUI/SpotifyMix-MediumItalic.eot');
+    src: local('Spotify Mix Medium Italic'), local('SpotifyMix-MediumItalic'),
+        url(' SpotifyMixUI/SpotifyMix-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-MediumItalic.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-MediumItalic.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix';
+    src: url(' SpotifyMixUI/SpotifyMix-Black.eot');
+    src: local('Spotify Mix Black'), local('SpotifyMix-Black'),
+        url(' SpotifyMixUI/SpotifyMix-Black.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-Black.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-Black.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix';
+    src: url(' SpotifyMixUI/SpotifyMix-Medium.eot');
+    src: local('Spotify Mix Medium'), local('SpotifyMix-Medium'),
+        url(' SpotifyMixUI/SpotifyMix-Medium.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-Medium.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-Medium.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix';
+    src: url(' SpotifyMixUI/SpotifyMix-Bold.eot');
+    src: local('Spotify Mix Bold'), local('SpotifyMix-Bold'),
+        url(' SpotifyMixUI/SpotifyMix-Bold.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-Bold.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-Bold.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix';
+    src: url(' SpotifyMixUI/SpotifyMix-ThinItalic.eot');
+    src: local('Spotify Mix Thin Italic'), local('SpotifyMix-ThinItalic'),
+        url(' SpotifyMixUI/SpotifyMix-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-ThinItalic.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-ThinItalic.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix Ultra';
+    src: url(' SpotifyMixUI/SpotifyMix-UltraItalic.eot');
+    src: local('Spotify Mix Ultra Italic'), local('SpotifyMix-UltraItalic'),
+        url(' SpotifyMixUI/SpotifyMix-UltraItalic.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-UltraItalic.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-UltraItalic.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-UltraItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix';
+    src: url(' SpotifyMixUI/SpotifyMix-Thin.eot');
+    src: local('Spotify Mix Thin'), local('SpotifyMix-Thin'),
+        url(' SpotifyMixUI/SpotifyMix-Thin.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-Thin.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-Thin.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spotify Mix Ultra';
+    src: url(' SpotifyMixUI/SpotifyMix-Ultra.eot');
+    src: local('Spotify Mix Ultra'), local('SpotifyMix-Ultra'),
+        url(' SpotifyMixUI/SpotifyMix-Ultra.eot?#iefix') format('embedded-opentype'),
+        url(' SpotifyMixUI/SpotifyMix-Ultra.woff2') format('woff2'),
+        url(' SpotifyMixUI/SpotifyMix-Ultra.woff') format('woff'),
+        url(' SpotifyMixUI/SpotifyMix-Ultra.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

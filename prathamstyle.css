@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Spotify Mix";
+    transition: all 0.1.5s ease-in-out;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 20px 25px;
+    /* outline: 2px solid white; */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.spotifylogo {
+    filter: invert();
+    width: 35px;
+}
+
+.homeicon {
+    filter: invert();
+    width: 25px;
+}
+
+.iconbox {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 29vw; */
+    /* margin-right: -10px; */
+}
+
+.iconbox:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.searchbar {
+    background-color: rgb(31, 31, 31);
+    width: 450px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 3px;
+    padding-right: 18px;
+}
+
+.searchbar:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.searchicon {
+    width: 25px;
+    margin-left: 8px;
+}
+
+.search {
+    width: 200px;
+    color: rgb(255, 255, 255, 0.65);
+
+}
+
+.vline {
+    width: 1px;
+    height: 60%;
+    border: 0.6px solid rgba(255, 255, 255, 0.553);
+    margin-left: auto;
+}
+
+.browseicon {
+    filter: invert() brightness(0.6);
+    width: 25px;
+    height: 25px;
+}
+
+.browseicon:hover {
+    filter: invert() brightness(1)
+}
+
+.installicon {
+    width: 16px;
+    height: 16px;
+    filter: invert();
+}
+
+.intxt {
+    color: white;
+    font-size: 14px;
+    font-weight: 700px;
+}
+
+.install {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    filter: brightness(0.6);
+}
+
+.install:hover {
+    filter: brightness(0.9);
+    scale: 1.02;
+
+    .intxt {
+        text-decoration: underline;
+    }
+}
+
+.installi {
+    margin-left: auto;
+}
+
+.centersearchl {
+    margin-left: 26vw;
+    width: fit-content;
+    display: flex;
+    gap: 7px;
+    /* outline: 2px solid white; */
+}
+
+.bellicon {
+    filter: invert() brightness(0.6);
+    width: 16px;
+}
+
+.bellicon:hover {
+    filter: invert() brightness(1);
+}
+
+.peopleicon {
+    filter: invert() brightness(0.6);
+    width: 16px;
+}
+
+.peopleicon:hover {
+    filter: invert() brightness(1);
+}
+
+.accountdiv {
+    background-color: #B49BC8;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* this is sidebar  */
+
+.leftSidebar {
+    background-color: #121212;
+    width: 30vw;
+    height: 90vh;
+    padding: 0px 0px;
+}
+.artistcontent{
+    overflow-y: scroll;
+    scrollbar-color: auto;
+    scrollbar-color: rgba(255, 255, 255, 0.629) rgba(0, 0, 0, 0.612);
+    max-height: 550px;
+    /* outline: 2px solid red; */
+}
+
+.navul{
+    display: flex;
+    padding: 0;
+}
+
+.urlibrary {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 6px;
+}
+
+.buttoncan {
+    margin-left: auto;
+}
+
+.create-button {
+    width: fit-content;
+    background-color: #323232a9;
+    padding: 10px 15px;
+    border-radius: 30px;
+    display: flex;
+    gap: 5px;
+    filter: brightness(0.6);
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    filter: brightness(1);
+
+}
+
+.create-button:hover {
+    background-color: #3e3d3d;
+}
+
+.plussvg {
+    filter: invert();
+    width: 15px;
+}
+
+.fullscreenicon {
+    filter: invert() brightness(0.5);
+    width: 18px;
+}
+
+.fullscreenicon:hover {
+    filter: invert() brightness(1);
+    transform: scale(1.1);
+}
+
+.artistbutton {
+    padding: 5px 13px;
+    margin: 10px 0;
+}
+
+.searchicondiv {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    /* margin: 20px 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchicondiv:hover {
+    background-color: #3e3d3d;
+
+    .searchiconside {
+        filter: invert() brightness(0.9);
+    }
+}
+
+.sidenav {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.searchiconside {
+    width: 17px;
+    filter: invert() brightness(0.6);
+}
+
+.recentdiv {
+    width: min-content;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    filter: brightness(0.5);
+}
+
+.recentdiv:hover {
+    filter: brightness(0.9);
+    scale: 1.02;
+}
+
+.recenticon {
+    width: 20px;
+    height: 20px;
+    filter: invert();
+}
+
+.sideparent{
+    padding: 20px 20px;
+}
+
+.artistcontent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* padding: 10px; */
+    margin-top: 10px;
+}
+
+.artistbar {
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.artistbar:hover {
+    background-color: #3e3d3d;
+}
+
+.artistphoto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.about{
+    font-size: 14px;
+    font-weight: 400;
+}
+.name{
+    font-size: 16px;
+    font-weight: 400;
+}
+footer{
+    margin: auto;
+    width: 99vw;
+}
+.player{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+    /* height: 60px; */
+    width: 99vw;
+    position: absolute;
+    /* margin: auto; */
+    z-index: 5;
+    padding: 10px;
+    bottom: 0px;
+    left: 0px;
+}
+.musicimg{
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+}
+.musictitle{
+    font-size: 14px;
+    font-weight: 400;
+}
+.musicsubs{
+    font-size: 12px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.videoicon{
+    width: 12px;
+    filter: invert();
+    display: inline;
+    margin-right: 5px;
+    /* margin-top: 10px; */
+}
+.addicon{
+    filter: invert();
+    width: 14px;
+    margin: 20px;
+}
+.mainplayerupper{
+    display: flex;
+}
+.shuffleicon{
+    filter: invert();
+    width: 14px;
+}
