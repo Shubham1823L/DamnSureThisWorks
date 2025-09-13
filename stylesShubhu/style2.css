@@ -50,8 +50,9 @@ main {
 .heroWrapper {
     border-radius: var(--border-radius-def);
     background-color: var(--hero-bg-black-400);
+
     padding: 1.2rem 2rem;
-    max-height: 700px;
+    max-height: 670px;
     overflow: scroll;
     /* #CHANGE */
     width: 70vw;
