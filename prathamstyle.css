@@ -12,16 +12,71 @@ body {
 
 ul {
     list-style: none;
-    padding: 20px 25px;
     /* outline: 2px solid white; */
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
+
+/* shubhuStart */
+
+:root {
+    --icon-grey-glow: #FBFBFB;
+    --icon-grey-def: #b3b3b3;
+    --icon-def-scale: 1.05;
+
+}
+
+.greyNavIcon {
+    fill: var(--icon-grey-def);
+
+    * {
+        color: var(--icon-grey-def);
+    }
+
+    cursor: pointer;
+
+    &:hover {
+        fill: var(--icon-grey-glow);
+        scale: var(--icon-def-scale);
+
+        * {
+            color: var(--icon-grey-glow);
+        }
+    }
+}
+
+header>nav>ul {
+    justify-content: space-between;
+    padding: .5rem .2rem .5rem 1.5rem;
+
+
+}
+
+.navBarRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.7rem;
+    padding-right: .7rem;
+    flex-basis:265px;
+
+}
+
+.navBarRight>span:last-child {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+
+
+/* shubhuEnd */
 .spotifylogo {
     filter: invert();
-    width: 35px;
+    width: 32px;
 }
 
 .homeicon {
@@ -30,9 +85,9 @@ ul {
 }
 
 .iconbox {
-    width: 45px;
-    height: 45px;
-    border-radius: 45px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
     background-color: rgb(31, 31, 31);
     display: flex;
     justify-content: center;
@@ -47,18 +102,18 @@ ul {
 
 .searchbar {
     background-color: rgb(31, 31, 31);
-    width: 450px;
-    height: 40px;
+    width: 474px;
     border-radius: 40px;
     display: flex;
     align-items: center;
     gap: 10px;
     padding-left: 3px;
     padding-right: 18px;
+    transition: all .3s ease-in-out;
 }
 
 .searchbar:hover {
-    background-color: rgb(41, 41, 41);
+    background-color: #2A2A2A;
 }
 
 .searchicon {
@@ -68,8 +123,11 @@ ul {
 
 .search {
     width: 200px;
-    color: rgb(255, 255, 255, 0.65);
+    color: var(--icon-grey-glow);
+}
 
+.search::placeholder {
+    color: var(--icon-grey-def);
 }
 
 .vline {
@@ -80,81 +138,77 @@ ul {
 }
 
 .browseicon {
-    filter: invert() brightness(0.6);
     width: 25px;
     height: 25px;
 }
 
-.browseicon:hover {
-    filter: invert() brightness(1)
-}
+
 
 .installicon {
     width: 16px;
     height: 16px;
-    filter: invert();
+
 }
 
 .intxt {
-    color: white;
     font-size: 14px;
-    font-weight: 700px;
+    font-weight: 700;
+letter-spacing: -.2px;
+
 }
 
 .install {
     display: flex;
     align-items: center;
     gap: 7px;
-    filter: brightness(0.6);
+
 }
 
-.install:hover {
-    filter: brightness(0.9);
-    scale: 1.02;
 
-    .intxt {
-        text-decoration: underline;
-    }
-}
 
 .installi {
     margin-left: auto;
 }
 
 .centersearchl {
-    margin-left: 400px;
     width: fit-content;
     display: flex;
     gap: 7px;
-    /* outline: 2px solid white; */
+    transform: translateX(104px);
+    transition: outline .3s ease-in-out;
 }
-
+.centersearchl:focus{
+    outline: 2px solid white;
+}
 .bellicon {
-    filter: invert() brightness(0.6);
     width: 16px;
 }
 
-.bellicon:hover {
-    filter: invert() brightness(1);
-}
+
 
 .peopleicon {
-    filter: invert() brightness(0.6);
     width: 16px;
 }
 
-.peopleicon:hover {
-    filter: invert() brightness(1);
-}
+
 
 .accountdiv {
     background-color: #B49BC8;
-    width: 35px;
-    height: 35px;
+    color: black;
+    font-weight: 700;
+    width: 32px;
+    height: 32px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    outline: 7px solid  rgb(39, 39, 39);
+    margin-left: .45rem;
+}
+
+.accountdiv:hover {
+    scale: var(--icon-def-scale);
 }
 
 
@@ -242,9 +296,7 @@ ul {
 .searchicondiv:hover {
     background-color: #3e3d3d;
 
-    .searchiconside {
-        filter: invert() brightness(0.9);
-    }
+
 }
 
 .sidenav {
@@ -255,7 +307,7 @@ ul {
 
 .searchiconside {
     width: 17px;
-    filter: invert() brightness(0.6);
+
 }
 
 .recentdiv {
@@ -267,11 +319,11 @@ ul {
     margin-right: 15px;
     font-size: 14px;
     font-weight: 400;
-    filter: brightness(0.5);
+
 }
 
 .recentdiv:hover {
-    filter: brightness(0.9);
+
     scale: 1.02;
 }
 
