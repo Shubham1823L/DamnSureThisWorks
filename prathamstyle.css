@@ -8,12 +8,13 @@
     /* this is to stop icons becoming small */
 }
 
-@media only screen and (max-width: 1400px){
-    .intxt{
+@media only screen and (max-width: 1400px) {
+    .intxt {
         display: none;
         width: 0px;
     }
-    .installspan{
+
+    .installspan {
         margin-left: auto;
     }
 }
@@ -72,7 +73,7 @@ header>nav>ul {
     justify-content: space-between;
     gap: 1.7rem;
     padding-right: .7rem;
-    flex-basis:265px;
+    flex-basis: 265px;
 
 }
 
@@ -173,8 +174,8 @@ header>nav>ul {
 .intxt {
     font-size: 14px;
     font-weight: 700;
-letter-spacing: -.2px;
-cursor: pointer;
+    letter-spacing: -.2px;
+    cursor: pointer;
 
 }
 
@@ -182,7 +183,7 @@ cursor: pointer;
     display: flex;
     align-items: center;
     gap: 7px;
-cursor: pointer;
+    cursor: pointer;
 }
 
 
@@ -199,9 +200,11 @@ cursor: pointer;
     transform: translateX(104px);
     transition: outline .3s ease-in-out;
 }
-.centersearchl:focus{
+
+.centersearchl:focus {
     outline: 2px solid white;
 }
+
 .bellicon {
     width: 16px;
     cursor: pointer;
@@ -227,7 +230,7 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    outline: 7px solid  rgb(39, 39, 39);
+    outline: 7px solid rgb(39, 39, 39);
     margin-left: .45rem;
 }
 
@@ -240,9 +243,7 @@ cursor: pointer;
 
 .leftSidebar {
     background-color: #121212;
-    width: 30%;
-    height: 90vh;
-    padding: 0px 0px;
+    flex-basis: 30%;
     border-radius: 8px;
     padding-left: 5px;
 }
@@ -408,10 +409,12 @@ cursor: pointer;
 
 .artistbar:hover {
     background-color: #212121;
-    .svgart{
+
+    .svgart {
         display: block;
     }
-    .artistphoto{
+
+    .artistphoto {
         filter: brightness(0.45);
     }
 }
@@ -423,11 +426,11 @@ cursor: pointer;
     object-fit: cover;
 }
 
-.artistimgwrap{
+.artistimgwrap {
     position: relative;
 }
 
-.artistimgwrap > img:last-child{
+.artistimgwrap>img:last-child {
     filter: invert();
     position: absolute;
     top: 12px;
@@ -505,7 +508,7 @@ footer {
     cursor: pointer;
 }
 
-.addicon:hover{
+.addicon:hover {
     filter: invert() brightness(1);
 }
 
@@ -516,7 +519,7 @@ footer {
     cursor: pointer;
 }
 
-.shuffleicon:hover{
+.shuffleicon:hover {
     filter: invert() brightness(1);
 }
 
@@ -524,7 +527,7 @@ footer {
     display: flex;
 }
 
-.mainplayer{
+.mainplayer {
     /* width: 100px; */
     /* height: 10px; */
     /* outline: 2px solid red; */
@@ -532,7 +535,8 @@ footer {
     display: flex;
     gap: 20px;
 }
-.play{
+
+.play {
     background-color: rgb(255, 255, 255);
     width: 28px;
     height: 28px;
@@ -542,44 +546,52 @@ footer {
     justify-content: center;
     cursor: pointer;
 }
-.playsvg{
+
+.playsvg {
     width: 16px;
     /* outline: 2px solid red; */
     /* margin-left: 3px; */
 }
-.parentmainplayer{
+
+.parentmainplayer {
     width: fit-content;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.progressbar{
+
+.progressbar {
     width: 350px;
     height: 3px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.761);
-    cursor:grab;
+    cursor: grab;
 }
-.progressbar:hover{
+
+.progressbar:hover {
     background-color: white;
 }
-.progress{
+
+.progress {
     display: flex;
     gap: 10px;
     align-items: center;
 }
-.time1{
+
+.time1 {
     font-size: 11px;
     font-weight: 300;
 }
-.soundbar{
+
+.soundbar {
     width: 70px;
     height: 3px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.77);
-    cursor:grab;
+    cursor: grab;
 }
-.soundbar:hover{
+
+.soundbar:hover {
     background-color: white;
 }
