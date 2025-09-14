@@ -381,11 +381,11 @@ footer {
 .player {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     background-color: black;
     /* height: 60px; */
     width: 100vw;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: fixed;
     /* margin: auto; */
     z-index: 5;
@@ -398,6 +398,7 @@ footer {
     width: 56px;
     height: 56px;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .musictitle {
@@ -422,16 +423,84 @@ footer {
 }
 
 .addicon {
-    filter: invert();
+    filter: invert() brightness(0.7);
     width: 14px;
     margin: 20px;
+}
+
+.addicon:hover{
+    filter: invert() brightness(1);
+}
+
+
+.shuffleicon {
+    filter: invert() brightness(0.7);
+    width: 15px;
+}
+
+.shuffleicon:hover{
+    filter: invert() brightness(1);
 }
 
 .mainplayerupper {
     display: flex;
 }
 
-.shuffleicon {
-    filter: invert();
-    width: 14px;
+.mainplayer{
+    /* width: 100px; */
+    /* height: 10px; */
+    /* outline: 2px solid red; */
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+.play{
+    background-color: rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playsvg{
+    width: 16px;
+    /* outline: 2px solid red; */
+    /* margin-left: 3px; */
+}
+.parentmainplayer{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.progressbar{
+    width: 350px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.761);
+    cursor:grab;
+}
+.progressbar:hover{
+    background-color: white;
+}
+.progress{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.time1{
+    font-size: 11px;
+    font-weight: 300;
+}
+.soundbar{
+    width: 70px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.77);
+    cursor:grab;
+}
+.soundbar:hover{
+    background-color: white;
 }
