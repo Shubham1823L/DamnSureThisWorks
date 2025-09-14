@@ -60,10 +60,9 @@ main {
     max-height: 670px;
     overflow: scroll;
     /* #CHANGE */
-    width: 70vw;
     position: relative;
     --hero-gradient: #264A31;
-
+    width: 70%;
 
 }
 
