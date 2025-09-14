@@ -8,14 +8,16 @@
     /* this is to stop icons becoming small */
 }
 
-/* @media only screen and (max-width: 1400px){
-
+@media only screen and (max-width: 1400px){
     .intxt{
         display: none;
         width: 0px;
     }
-} */
- 
+    .installspan{
+        margin-left: auto;
+    }
+}
+
 body {
     background-color: black;
 }
