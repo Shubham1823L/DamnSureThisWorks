@@ -4,8 +4,18 @@
     font-family: "Spotify Mix";
     transition: all 0.1.5s ease-in-out;
     color: white;
+    flex-shrink: 0;
+    /* this is to stop icons becoming small */
 }
 
+/* @media only screen and (max-width: 1400px){
+
+    .intxt{
+        display: none;
+        width: 0px;
+    }
+} */
+ 
 body {
     background-color: black;
 }
