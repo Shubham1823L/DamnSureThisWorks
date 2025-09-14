@@ -55,8 +55,8 @@ main {
     max-height: 670px;
     overflow: scroll;
     /* #CHANGE */
-    width: 70vw;
-
+    /* width: 70vw; */
+    width: 70%;
 }
 
 .heroHeader {
