@@ -18,3 +18,19 @@ showPlayButton(longCards)
 
 let heroPlaylistsCards = document.querySelectorAll(".heroCardWrapper")
 showPlayButton(heroPlaylistsCards)
+
+
+
+// Adding bgGradient change functionality to hero area
+function heroGradientChanger(){
+    let heroWrapper=document.querySelector(".heroWrapper")
+    longCards.forEach(card => {
+        card.addEventListener("mouseenter",()=>{
+            heroWrapper.setAttribute("style","--hero-gradient:rgb(42, 5, 5)")
+        })
+        card.addEventListener("mouseleave",()=>{
+            heroWrapper.setAttribute("style","--hero-gradient:rgba(56, 66, 71, 1)")
+        })
+    });
+}
+// heroGradientChanger()
