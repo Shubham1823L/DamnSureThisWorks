@@ -77,6 +77,8 @@ main>* {
     --hero-gradient: #264A31;
     flex-basis: 70%;
     flex-grow: 1;
+
+
 }
 
 .heroWrapper::after {
@@ -137,6 +139,8 @@ main>* {
 }
 
 .longCard {
+    --a:none;
+    --b:none;
     text-transform: capitalize;
     font-size: 14px;
     font-weight: 700;
@@ -154,6 +158,11 @@ main>* {
 
 .longCard:is(:hover, :focus) {
     background-color: #ffffff24;
+
+    /* .lCardRight>span>span{
+       transform: translateX(var(--b));
+
+    } */
 }
 
 .lCardLeft {
@@ -177,8 +186,22 @@ main>* {
     align-items: center;
     padding-right: 10px;
     flex: 1;
+}
 
+.lCardRight>span {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
 
+    /* span {
+        display: block;
+        position: relative;
+        transition: all 3s linear;
+        left:var(--a);
+    } */
 }
 
 .playButtonBase {
@@ -194,6 +217,7 @@ main>* {
     opacity: 0;
     top: 15px;
     transition: all .3s ease-in-out;
+    flex-shrink: 0;
 
     &:hover {
         background-color: var(--green-400);
